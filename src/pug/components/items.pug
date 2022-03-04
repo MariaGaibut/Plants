@@ -1,0 +1,45 @@
+mixin item(args={})
+    a(href="#" class=args.mod_class).item
+        img.item__img(src=args.img, alt=args.title)
+        span.item__info 
+            span.item__title=args.title 
+            span.item__count=args.count 
+.container
+    .items
+        +item({
+            mod_class: 'item--first',
+            img: './assets/imgs/plant1.png',
+            title: 'Pet Friendly434',
+            count: '16 Items',
+        })
+        +item({
+            img: './assets/imgs/plant2.png',
+            title: 'Outdoor',
+            count: '10 Items',
+        })
+        +item({
+            img: './assets/imgs/plant3.png',
+            title: 'Outdoor',
+            count: '16 Items',
+        })
+        +item({
+            img: './assets/imgs/plant4.png',
+            title: 'Pet Friendly',
+            count: '16 Items',
+        })
+        +item({
+            img: './assets/imgs/plant5.png',
+            title: 'Pet Friendly',
+            count: '16 Items',
+        })
+        +item({
+            img: './assets/imgs/plant6.png',
+            title: 'Pet Friendly',
+            count: '16 Items',
+        })
+        +item({
+            mod_class: 'item--last',
+            img: './assets/imgs/plant7.png',
+            title: 'Office Collection',
+            count: '21 Items',
+        })

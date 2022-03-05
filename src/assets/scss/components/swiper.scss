@@ -1,4 +1,21 @@
+// .slider-wrapper{
+//     overflow: hidden;
+// }
+// .slider{
+//     display: flex;
+
+// }
+// .slide{
+
+// }
 .swiper {
     width: 600px;
     height: 300px;
-}
+  }
+  .swiper-slide{
+      text-align: center;
+  }
+  .swiper-slide img{
+      max-height: 100%;
+      max-width: 100%;
+  }

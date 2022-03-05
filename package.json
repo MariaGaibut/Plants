@@ -21,6 +21,7 @@
     "sass": "^1.45.1"
   },
   "dependencies": {
+    "custom-select": "^1.1.15",
     "swiper": "^7.4.1"
   }
 }

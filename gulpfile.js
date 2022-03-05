@@ -62,6 +62,7 @@ function images() {
 function vendorJS() {
     return gulp.src([
             'node_modules/swiper/swiper-bundle.min.js',
+            'node_modules/custom-select/build/custom-select.min.js',
         ])
         .pipe(concat('vendors.min.js'))
         .pipe(gulp.dest('build/assets/js'))
@@ -72,6 +73,7 @@ function vendorJS() {
 function vendorCSS() {
     return gulp.src([
         'node_modules/swiper/swiper-bundle.min.css',
+        'node_modules/custom-select/build/custom-select.css',
         ])
         .pipe(concat('vendors.min.css'))
         .pipe(gulp.dest('build/assets/css'))

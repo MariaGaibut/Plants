@@ -1,22 +1,23 @@
-console.log('Hello world!');
+customSelect('select');
+
+
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+});
